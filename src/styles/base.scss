@@ -1,0 +1,57 @@
+// Poppins Font
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+// Inter Font
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+// Overpass Font
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+// Helvetica Font
+@import url("https://fonts.cdnfonts.com/css/helvetica-2");
+
+$yellow: #fed116;
+$green: #009e61;
+$gray: #f3f4f6;
+$light: #fff;
+$dark: #1a202e;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Helvetica", sans-serif;
+  color: $gray;
+  transition: 0.3s ease-out;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: $light;
+  overflow-x: hidden;
+}
+
+p {
+  font-family: "Epilogue", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.App {
+  position: relative;
+}

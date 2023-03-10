@@ -1,0 +1,89 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 2px solid $gray;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 1280px;
+    margin: 0 auto;
+    max-width: 95%;
+  }
+  &-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo {
+    }
+    &__options {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      margin: 0 3rem;
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        span {
+          display: inline-block;
+          font-weight: bold;
+        }
+        @media screen and (max-width: 860px) {
+          display: none;
+        }
+      }
+    }
+  }
+  &-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.25rem;
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      border-radius: 4px;
+      padding: 0.5rem 1rem;
+      background: #fff;
+      cursor: pointer;
+      transition: 0.3s ease;
+      span {
+        font-weight: bold;
+        display: inline-block;
+        line-height: 18px;
+        @media screen and (max-width: 640px) {
+          display: none;
+        }
+      }
+    }
+    .upload {
+      border: 2px solid $green;
+      span {
+        color: $green;
+      }
+      &:hover {
+        background: #f1f5f9;
+      }
+    }
+    .github {
+      border: none;
+      span {
+        color: $dark;
+      }
+      &:hover {
+        span {
+          color: rgba($color: $dark, $alpha: 0.75);
+        }
+      }
+    }
+  }
+}

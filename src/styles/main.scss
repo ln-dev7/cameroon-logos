@@ -1,0 +1,129 @@
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: rgba($color: $green, $alpha: 0.03);
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-left: 2px dashed $yellow;
+    border-right: 2px dashed $green;
+    z-index: 3;
+    background: #fff;
+  }
+  &-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 750px;
+    max-width: 95%;
+    margin-top: 7.5rem;
+    margin-bottom: 4rem;
+    @media screen and (max-width: 860px) {
+      margin-top: 5rem;
+    }
+    h1 {
+      font-weight: 500;
+      font-size: 1.5rem;
+      line-height: 32px;
+    }
+    h3 {
+      font-size: 1rem;
+      line-height: 24px;
+      margin-bottom: 1rem;
+    }
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      border-radius: 4px;
+      padding: 0.6rem 1rem;
+      background: $yellow;
+      border: 2px solid #fff;
+      cursor: pointer;
+      transition: 0.3s ease;
+      span {
+        font-weight: bold;
+        display: inline-block;
+        line-height: 18px;
+      }
+      &:hover {
+        box-shadow: 0 0 0 2px $yellow;
+      }
+    }
+  }
+  &-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+
+    @media screen and (max-width: 860px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media screen and (max-width: 640px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 150px;
+
+      background: #fff;
+      border: 1px solid #f3f4f6;
+
+      cursor: pointer;
+      transition: 0.3s ease;
+
+      &:hover {
+        background: rgba($color: $yellow, $alpha: 0.1);
+      }
+
+      // &:nth-child(odd) {
+      //   background: #f3f4f6;
+      //   border: 1px solid #f3f4f6;
+      // }
+      // &:nth-child(even) {
+      //   background: #fff;
+      //   border: 1px solid #f3f4f6;
+      // }
+    }
+  }
+  .bg-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr;
+    z-index: -1;
+    .bg-line {
+      border-right: 2px $gray;
+      width: 100%;
+      height: 100%;
+      &:nth-child(even) {
+        border-right-style: dashed;
+      }
+      &:nth-child(odd) {
+        border-right-style: solid;
+
+        @media screen and (max-width: 728px) {
+          display: none;
+        }
+      }
+    }
+    @media screen and (max-width: 728px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
