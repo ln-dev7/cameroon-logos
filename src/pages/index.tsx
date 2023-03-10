@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import CardList from "./../components/CardList";
+import LogoList from "../components/LogoList";
 import Header from "../components/Header";
 import Section from "./../components/Section";
 import dataOrder from "./../data/dataOrder";
@@ -31,7 +31,7 @@ export default function Home() {
               <div className="bg-line"></div>
             </div>
             <Section />
-            <CardList filteredData={filteredData} />
+            <LogoList filteredData={filteredData} />
           </div>
         </main>
       </div>

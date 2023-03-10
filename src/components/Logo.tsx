@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import { Modal } from "react-bootstrap";
-import PreviewCard from "./PreviewCard";
+import PreviewLogo from "./PreviewLogo";
 import { useState } from "react";
 
 const cleanUrl = (link: string) => {
@@ -13,7 +13,7 @@ const cleanUrl = (link: string) => {
   );
 };
 
-export default function Header({
+export default function Logo({
   name,
   link,
   description,
@@ -46,7 +46,7 @@ export default function Header({
   return (
     <>
       <Modal show={previewCardIsOpen} onHide={handlePreviewCardClose}>
-        <PreviewCard
+        <PreviewLogo
           handlePreviewCardClose={handlePreviewCardClose}
           name={name}
           link={link}

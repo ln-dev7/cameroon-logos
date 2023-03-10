@@ -1,6 +1,6 @@
-import Card from "./Card";
+import Card from "./Logo";
 
-const CardList = ({
+const LogoList = ({
   filteredData,
 }: {
   filteredData: {
@@ -18,7 +18,7 @@ const CardList = ({
     };
   }[];
 }) => (
-  <div className="main-container">
+  <div className="main-body">
     {filteredData.map((item, index) => (
       <Card
         key={index}
@@ -35,4 +35,4 @@ const CardList = ({
   </div>
 );
 
-export default CardList;
+export default LogoList;

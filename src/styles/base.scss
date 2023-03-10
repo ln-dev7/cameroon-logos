@@ -19,7 +19,8 @@ $dark: #1a202e;
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: "Helvetica", sans-serif;
-  color: $gray;
+  //font-family: 'Inter', sans-serif;
+  color: $dark;
   transition: 0.3s ease-out;
 }
 

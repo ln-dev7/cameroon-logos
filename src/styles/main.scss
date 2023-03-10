@@ -6,6 +6,9 @@
   position: relative;
   background: rgba($color: $green, $alpha: 0.03);
   &__container {
+    width: 1280px;
+    margin: 0 auto;
+    max-width: 95%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -36,7 +39,7 @@
       line-height: 24px;
       margin-bottom: 1rem;
     }
-    button {
+    a {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -57,7 +60,7 @@
       }
     }
   }
-  &-container {
+  &-body {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);

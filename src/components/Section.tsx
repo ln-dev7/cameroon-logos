@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Section = () => {
   return (
-    <section className="main-container">
+    <section className="main-header">
       <h1>
         Cameroon Logos, an open source collection of high quality, pixel perfect
         Cameroon company logos for free use.
